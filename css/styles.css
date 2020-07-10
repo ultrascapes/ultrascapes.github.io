@@ -1,4 +1,26 @@
-h1 { 
-    margin: 100px 0 0 0;
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: slategray;
+    font-family: monospace;
     text-align: center;
-    }
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    font-size: 10em;
+}
+
+footer {
+    padding: 20px;
+    font-size: 2em;
+}
