@@ -1,35 +1,151 @@
+/*
+Color Palette
+#C1524F
+#F6F3E0
+#C4D1BF
+#A4A795
+#566F71
+*/
+
 body {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #A4A692;
     font-family: monospace;
     text-align: center;
+    background-color: #F6F3E0;
 }
 
 main {
-    flex: 1;
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: auto;
+    grid-template-rows: 2fr 2fr 1fr 1fr;
+}
+
+main section {
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-main h1 {
-    font-size: 10em;
-    color: #47747D;
+.alpha div {
+    margin: auto;
 }
 
-main h1 .o {
-    color: #D8E3AB;
+.alpha h1 {
+    font-size: 7em;
+    color: #C1524F;
+    margin: 0;
 }
 
-main h1 .l {
-    color: #F6B06C;
+.alpha h2 {
+    font-size: 7em;
+    color: #566F71;
+    margin: 0;
 }
 
-footer {
-    padding: 20px;
+main .beta div {
+    margin: auto;
+}
+
+.beta {
+    background-color: #C1524F;
+}
+
+.beta h3 {
+    color: #F6F3E0;
+    font-size: 2.5em;
+}
+
+.group, .group-light {
+    white-space: nowrap;
+    display: block;
+}
+
+.group-light {
+    opacity: 0.7;
+}
+
+.gamma {
+    background-color: #CED8C6;;
+}
+
+.delta {  
+    background-color: #B6B9AA;
+}
+
+.gamma div h4, .delta div h4 {
+    margin: 10px;
     font-size: 2em;
+    color: #3a4a4c;
 }
+
+.gamma div a, .delta div a {
+    font-size: 1.5em;
+    color: #566F71;
+    transition-property: color;
+    transition-duration: 300ms;
+}
+
+.gamma div a:hover, .delta div a:hover {
+    color: #C1524F;
+    text-decoration: none;
+}
+
+.gamma, .delta {
+    transition-property: background-color;
+    transition-duration: 1s;
+    padding: 40px 20px;
+}
+
+.gamma:hover {
+    background-color: #E2E6D3;
+}
+
+.delta:hover {
+    background-color: #DCDCCA;
+}
+
+.gamma div, .delta div {
+    margin: 20px auto auto auto;
+}
+
+@media only screen and (min-width: 500px) {
+    .alpha h1, .alpha h2 {
+        font-size: 8em;
+    }
+    .beta h3 {
+        font-size: 3.5em;
+    }
+    .gamma div a, .delta div a {
+        font-size: 1.75em;
+    }
+    .gamma div h4, .delta div h4 {
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+    }
+    main .beta div {
+        margin: auto 20px auto 20px;
+        text-align: left;
+    }
+    .beta h3 {
+        font-size: 4em;
+    }
+    .gamma div a, .delta div a {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .gamma div, .delta div {
+        margin: auto auto 40px auto;
+    }
+}
+
