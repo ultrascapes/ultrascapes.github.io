@@ -37,12 +37,14 @@ main section {
     font-size: 7em;
     color: #C1524F;
     margin: 0;
+    transform: skew(3deg, 7deg);
 }
 
 .alpha h2 {
     font-size: 7em;
     color: #566F71;
     margin: 0;
+    transform: skew(-3deg, -5deg);
 }
 
 main .beta div {
