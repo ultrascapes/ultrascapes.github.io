@@ -31,20 +31,21 @@ main section {
 
 .alpha div {
     margin: auto;
+    perspective: 400px;
 }
 
 .alpha h1 {
     font-size: 7em;
     color: #C1524F;
     margin: 0;
-    transform: skew(3deg, 7deg);
+    transform: rotateX(-30deg);
 }
 
 .alpha h2 {
     font-size: 7em;
     color: #566F71;
     margin: 0;
-    transform: skew(-3deg, -5deg);
+    transform: rotateX(20deg);
 }
 
 main .beta div {
